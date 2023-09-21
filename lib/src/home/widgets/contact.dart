@@ -5,12 +5,15 @@ class Contact extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Column(
-          children: [],
+        Text(
+          "Contact",
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
-        Column(
+        const Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [],
         ),
       ],

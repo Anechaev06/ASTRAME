@@ -10,13 +10,21 @@ class AppTheme {
       primary: AppColors.primaryColor,
       background: AppColors.bgColor,
     ),
-    textTheme: GoogleFonts.montserratTextTheme(),
-    appBarTheme: appBarTheme,
-  );
-
-  static const AppBarTheme appBarTheme = AppBarTheme(
-    color: AppColors.bgColor,
-    elevation: 0,
-    centerTitle: true,
+    textTheme: GoogleFonts.montserratTextTheme().copyWith(
+      headlineLarge: const TextStyle(
+        fontSize: 36.0,
+        color: AppColors.primaryColor,
+        fontWeight: FontWeight.bold,
+      ),
+      headlineMedium: const TextStyle(
+        fontSize: 32.0,
+        color: AppColors.whiteColor,
+        fontWeight: FontWeight.w700,
+      ),
+      bodyMedium: const TextStyle(
+        fontSize: 16.0,
+        color: AppColors.greyColor,
+      ),
+    ),
   );
 }

@@ -11,14 +11,18 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: EdgeInsets.symmetric(horizontal: 300),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            SizedBox(height: 25),
             HeadLine(),
+            SizedBox(height: 25),
             Name(),
+            SizedBox(height: 25),
             Projects(),
+            SizedBox(height: 25),
             Contact(),
           ],
         ),

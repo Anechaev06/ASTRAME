@@ -6,11 +6,29 @@ class Name extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        const Column(
-          children: [],
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              "Vlad Nechaev",
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            Text(
+              "entrepreneur & mobile developer",
+              style: Theme.of(context).textTheme.bodyMedium,
+            )
+          ],
         ),
-        Image.asset(""),
+        ClipOval(
+          child: Image.asset(
+            "assets/dog.webp",
+            width: 120,
+            height: 120,
+            fit: BoxFit.cover,
+          ),
+        ),
       ],
     );
   }

@@ -1,4 +1,3 @@
-import 'package:astrame/src/core/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class HeadLine extends StatelessWidget {
@@ -6,13 +5,6 @@ class HeadLine extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text(
-      "ASTRAME",
-      style: TextStyle(
-        color: AppColors.primaryColor,
-        fontWeight: FontWeight.bold,
-        fontSize: 40,
-      ),
-    );
+    return Text("ASTRAME", style: Theme.of(context).textTheme.headlineLarge);
   }
 }
