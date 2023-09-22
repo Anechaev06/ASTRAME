@@ -9,12 +9,12 @@ class Home extends StatelessWidget {
   const Home({super.key});
 
   Widget _chooseLayout(double width) {
-    if (width > 1200) {
-      return _desktopLayout();
-    } else if (width > 800) {
+    if (width < 600) {
+      return _mobileLayout();
+    } else if (width >= 600 && width < 1200) {
       return _tabletLayout();
     } else {
-      return _mobileLayout();
+      return _desktopLayout();
     }
   }
 
