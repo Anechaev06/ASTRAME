@@ -10,12 +10,12 @@ class Projects extends StatelessWidget {
       'projectImageUrl': 'assets/black_hole.jpeg',
     },
     {
-      'projectName': 'WeatherApp',
-      'projectImageUrl': 'assets/black_hole.jpeg',
+      'projectName': 'Sneaker Store',
+      'projectImageUrl': 'assets/sneaker_store.jpeg',
     },
     {
-      'projectName': 'TodoList',
-      'projectImageUrl': 'assets/black_hole.jpeg',
+      'projectName': 'Financify',
+      'projectImageUrl': 'assets/financify.jpeg',
     },
   ];
 

@@ -20,7 +20,7 @@ class Name extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
               Text(
-                "entrepreneur & mobile developer",
+                "entrepreneur & flutter developer",
                 style: Theme.of(context).textTheme.bodyLarge,
               ),
             ],

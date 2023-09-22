@@ -31,7 +31,7 @@ class Contact extends StatelessWidget {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8)),
               tileColor: AppColors.projectTileColor,
-              trailing: Text(
+              trailing: SelectableText(
                 "astrame.tech@mail.ru",
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
