@@ -5,27 +5,32 @@ class Name extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double screenWidth = MediaQuery.of(context).size.width;
+    final double imageSize = screenWidth > 800 ? 120 : 80;
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "Vlad Nechaev",
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-            Text(
-              "entrepreneur & mobile developer",
-              style: Theme.of(context).textTheme.bodyMedium,
-            )
-          ],
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Vlad Nechaev",
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
+              Text(
+                "entrepreneur & mobile developer",
+                style: Theme.of(context).textTheme.bodyLarge,
+              ),
+            ],
+          ),
         ),
         ClipOval(
           child: Image.asset(
             "assets/dog.webp",
-            width: 120,
-            height: 120,
+            width: imageSize,
+            height: imageSize,
             fit: BoxFit.cover,
           ),
         ),

@@ -31,7 +31,7 @@ class ProjectTile extends StatelessWidget {
           Center(
             child: Text(
               projectName,
-              style: Theme.of(context).textTheme.bodyMedium,
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
           ),
         ],

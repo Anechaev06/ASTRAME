@@ -21,8 +21,12 @@ class AppTheme {
         color: AppColors.whiteColor,
         fontWeight: FontWeight.w700,
       ),
-      bodyMedium: const TextStyle(
+      bodyLarge: const TextStyle(
         fontSize: 16.0,
+        color: AppColors.greyColor,
+      ),
+      bodyMedium: const TextStyle(
+        fontSize: 14,
         color: AppColors.greyColor,
       ),
     ),
