@@ -30,17 +30,19 @@ class Contact extends StatelessWidget {
               "astrame.tech@mail.ru",
               style: Theme.of(context).textTheme.bodyMedium,
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 20),
             Text(
               "SOCIAL",
               style: Theme.of(context).textTheme.bodyMedium,
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Text(
                   "GitHub",
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
+                const SizedBox(width: 10),
                 Text(
                   "Telegram",
                   style: Theme.of(context).textTheme.bodyMedium,

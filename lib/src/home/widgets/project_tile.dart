@@ -19,12 +19,12 @@ class ProjectTile extends StatelessWidget {
         alignment: Alignment.centerLeft,
         children: [
           Padding(
-            padding: const EdgeInsets.all(5),
+            padding: const EdgeInsets.all(8),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(8),
               child: Image.network(
                 projectImageUrl,
-                width: 40,
+                width: 50,
               ),
             ),
           ),
