@@ -43,11 +43,11 @@ class Home extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         HeadLine(),
-        SizedBox(height: 25),
+        SizedBox(height: 20),
         Name(),
-        SizedBox(height: 25),
+        SizedBox(height: 20),
         Projects(),
-        SizedBox(height: 25),
+        SizedBox(height: 20),
         Contact(),
       ],
     );

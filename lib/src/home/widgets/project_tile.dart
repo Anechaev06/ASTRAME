@@ -10,31 +10,21 @@ class ProjectTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: AppColors.projectTileColor,
-        borderRadius: BorderRadius.circular(12),
+    return ListTile(
+      tileColor: AppColors.projectTileColor,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+      minVerticalPadding: 25,
+      leading: ClipRRect(
+        borderRadius: BorderRadius.circular(10),
+        child: Image.network(projectImageUrl, width: 50),
       ),
-      child: Stack(
-        alignment: Alignment.centerLeft,
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(8),
-              child: Image.network(
-                projectImageUrl,
-                width: 50,
-              ),
-            ),
-          ),
-          Center(
-            child: Text(
-              projectName,
-              style: Theme.of(context).textTheme.bodyLarge,
-            ),
-          ),
-        ],
+      title: Text(
+        projectName,
+        style: Theme.of(context).textTheme.bodyLarge,
+      ),
+      trailing: const Icon(
+        Icons.arrow_forward_ios_rounded,
+        color: AppColors.primaryColor,
       ),
     );
   }
