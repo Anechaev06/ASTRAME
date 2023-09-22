@@ -31,9 +31,9 @@ class Home extends StatelessWidget {
     if (width < 600) {
       return 25.0;
     } else if (width >= 600 && width < 1200) {
-      return 100.0;
+      return 125.0;
     } else {
-      return 400.0;
+      return 425.0;
     }
   }
 

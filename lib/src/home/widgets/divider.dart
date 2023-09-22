@@ -12,7 +12,7 @@ class BottomDivider extends StatelessWidget {
       right: 0,
       child: Divider(
         color: AppColors.primaryColor,
-        thickness: 3,
+        thickness: 5,
       ),
     );
   }

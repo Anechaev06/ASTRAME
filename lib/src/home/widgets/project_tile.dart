@@ -16,7 +16,7 @@ class ProjectTile extends StatelessWidget {
       minVerticalPadding: 25,
       leading: ClipRRect(
         borderRadius: BorderRadius.circular(10),
-        child: Image.network(projectImageUrl, width: 50),
+        child: Image.network(projectImageUrl, width: 45),
       ),
       title: Text(
         projectName,

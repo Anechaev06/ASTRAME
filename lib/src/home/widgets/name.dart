@@ -28,7 +28,7 @@ class Name extends StatelessWidget {
         ),
         ClipOval(
           child: Image.asset(
-            "assets/dog.webp",
+            "assets/ava.png",
             width: imageSize,
             height: imageSize,
             fit: BoxFit.cover,
