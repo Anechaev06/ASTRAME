@@ -5,13 +5,12 @@ import 'package:url_launcher/url_launcher.dart';
 class Contact extends StatelessWidget {
   const Contact({super.key});
 
-  Future<void> _launchUrl() async {
-    if (!await launchUrl(_url)) {
-      throw Exception('Could not launch $_url');
+  Future<void> _launchUrl(String urlStr) async {
+    Uri url = Uri.parse(urlStr);
+    if (!await launchUrl(url)) {
+      throw Exception('Could not launch $url');
     }
   }
-
-  static final Uri _url = Uri.parse('https://github.com/Anechaev06');
 
   @override
   Widget build(BuildContext context) {
@@ -50,15 +49,31 @@ class Contact extends StatelessWidget {
                 "Socials:",
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
-              trailing: InkWell(
-                onTap: _launchUrl,
-                child: Text(
-                  "github",
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyMedium
-                      ?.copyWith(decoration: TextDecoration.underline),
-                ),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  InkWell(
+                    onTap: () => _launchUrl("https://github.com/Anechaev06"),
+                    child: Text(
+                      "github",
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyMedium
+                          ?.copyWith(decoration: TextDecoration.underline),
+                    ),
+                  ),
+                  const SizedBox(width: 15),
+                  InkWell(
+                    onTap: () => _launchUrl("https://t.me/anecha3v"),
+                    child: Text(
+                      "telegram",
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyMedium
+                          ?.copyWith(decoration: TextDecoration.underline),
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
