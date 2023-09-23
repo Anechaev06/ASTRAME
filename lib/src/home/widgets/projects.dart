@@ -7,15 +7,15 @@ class Projects extends StatelessWidget {
   static final List<Map<String, String>> projectList = [
     {
       'projectName': 'Maskify',
-      'projectImageUrl': 'assets/black_hole.jpeg',
+      'projectImageUrl': 'assets/black_hole.png',
     },
     {
       'projectName': 'Sneaker Store',
-      'projectImageUrl': 'assets/sneaker_store.jpeg',
+      'projectImageUrl': 'assets/sneaker_store.png',
     },
     {
       'projectName': 'Financify',
-      'projectImageUrl': 'assets/financify.jpeg',
+      'projectImageUrl': 'assets/financify.png',
     },
   ];
 
