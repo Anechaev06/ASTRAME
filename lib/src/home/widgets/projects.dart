@@ -7,15 +7,18 @@ class Projects extends StatelessWidget {
   static final List<Map<String, String>> projectList = [
     {
       'projectName': 'Maskify',
-      'projectImageUrl': 'assets/black_hole.png',
+      'projectImageUrl': 'assets/maskify.png',
+      'projectUrl': 'https://github.com/Anechaev06/maskify',
     },
     {
       'projectName': 'Sneaker Store',
       'projectImageUrl': 'assets/sneaker_store.png',
+      'projectUrl': 'https://github.com/Anechaev06/sneaker_store',
     },
     {
-      'projectName': 'Financify',
+      'projectName': 'Financify [coming soon]',
       'projectImageUrl': 'assets/financify.png',
+      'projectUrl': 'https://github.com/Anechaev06/',
     },
   ];
 
@@ -40,6 +43,7 @@ class Projects extends StatelessWidget {
               child: ProjectTile(
                 projectName: projectList[index]['projectName']!,
                 projectImageUrl: projectList[index]['projectImageUrl']!,
+                projectUrl: projectList[index]['projectUrl']!,
               ),
             );
           },
