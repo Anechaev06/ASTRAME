@@ -7,47 +7,39 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final double screenWidth = MediaQuery.of(context).size.width;
-    final Widget layout = _chooseLayout(screenWidth);
-
-    return Scaffold(
-      body: Stack(
-        children: [
-          layout,
-          const BottomDivider(),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        body: _chooseLayout(screenWidth),
       ),
     );
   }
 
   Widget _chooseLayout(double width) {
-    final double horizontalPadding = _calculateHorizontalPadding(width);
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
+      padding:
+          EdgeInsets.symmetric(horizontal: _calculateHorizontalPadding(width)),
       child: _commonLayout(),
     );
   }
 
   double _calculateHorizontalPadding(double width) {
-    if (width < 600) {
-      return 25.0;
-    } else if (width >= 600 && width < 1200) {
-      return 125.0;
-    } else {
-      return 425.0;
-    }
+    if (width < 600) return 25.0;
+    if (width < 1200) return 125.0;
+    return 425.0;
   }
 
   Widget _commonLayout() {
+    const spacer = SizedBox(height: 15);
     return const Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         HeadLine(),
-        SizedBox(height: 20),
+        spacer,
         Name(),
-        SizedBox(height: 20),
+        spacer,
         Projects(),
-        SizedBox(height: 20),
+        spacer,
         Contact(),
       ],
     );

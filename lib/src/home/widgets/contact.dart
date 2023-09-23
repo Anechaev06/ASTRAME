@@ -33,6 +33,7 @@ class Contact extends StatelessWidget {
               trailing: SelectableText(
                 "astrame.tech@mail.ru",
                 style: Theme.of(context).textTheme.bodyMedium,
+                showCursor: true,
               ),
               leading: Text(
                 "Email:",
