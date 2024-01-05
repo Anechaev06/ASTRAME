@@ -1,16 +1,31 @@
-# astrame
+# Astrame: Portfolio Website
 
-A new Flutter project.
+**Welcome to the GitHub repository for "Astrame", a dynamic and modern portfolio site designed to showcase skills and projects.**
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Responsive Design:** Optimized for various devices and screen sizes.
+- **Portfolio Showcase:** Section dedicated to displaying projects and achievements.
+- **Contact Form:** Easy way for potential clients or collaborators to reach out.
 
-A few resources to get you started if this is your first Flutter project:
+## Technologies Used
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Frontend:** Flutter
+- **Deployment:** Firebase hosting
+ 
+## Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To run "Astrame" locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   https://github.com/Anechaev06/ASTRAME.git
+2. Navigate to the project directory:
+   ```bash
+   cd astrame
+3. Install dependencies:
+   ```bash
+   flutter pub get
+4. Run the application:
+   ```bash
+   flutter run
